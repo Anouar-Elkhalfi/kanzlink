@@ -1,0 +1,6 @@
+<h1><%= @link.title %></h1>
+<p><%= link_to @link.url, @link.url, target: "_blank", rel: "noopener noreferrer" %></p>
+<p><%= @link.description %></p>
+
+<%= link_to 'Edit', edit_link_path(@link) %> |
+<%= link_to 'Back', links_path %>
