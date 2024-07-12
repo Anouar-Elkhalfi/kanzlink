@@ -1,8 +1,15 @@
-<h1><%= @link.title %></h1>
-<p><%= link_to @link.url, @link.url, target: "_blank", rel: "noopener noreferrer" %></p>
-<p><%= @link.description %></p>
+<div class="container">
+  <div class="row">
+    <div class="col">
 
-<%= link_to 'Edit', edit_link_path(@link) %> |
-<%= link_to 'Back', collection_path(@link.collection) %> |
-<%= link_to 'Delete', link_path(@link), data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' } %>
+      <h1><%= @link.title %></h1>
+      <p><%= link_to @link.url, @link.url, target: "_blank", rel: "noopener noreferrer" %></p>
+      <p><%= @link.description %></p>
 
+      <%= link_to 'Edit', edit_link_path(@link) %> |
+      <%= link_to 'Back', collection_path(@link.collection) %> |
+      <%= link_to 'Delete', link_path(@link), data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' } %>
+
+    </div>
+  </div>
+</div>
