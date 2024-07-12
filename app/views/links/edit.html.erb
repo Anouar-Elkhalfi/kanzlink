@@ -1,3 +1,5 @@
-<h1><%= action_name.capitalize %> Link</h1>
+<h1>Edit Link</h1>
+
 <%= render 'form', link: @link %>
-<%= link_to 'Back', links_path %>
+
+<%= link_to 'Back', collection_path(@link.collection) %>

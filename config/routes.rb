@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  root to: "pages#home"
+  resources :collections do
+    resources :links, only: [:new, :create]
+  end
+  resources :links, except: [:new, :create]
   devise_for :users
-  resources :links
+   resources :links, except: [:new, :create]
+  root 'pages#home'
 end

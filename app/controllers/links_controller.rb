@@ -1,34 +1,32 @@
 class LinksController < ApplicationController
   before_action :set_link, only: [:show, :edit, :update, :destroy]
+  before_action :set_collection, only: [:new, :create]
 
-  # GET /links
-  def index
-    @links = Link.all
-  end
+  # Other actions...
 
   # GET /links/:id
   def show
   end
 
-  # GET /links/new
+  # GET /collections/:collection_id/links/new
   def new
-    @link = Link.new
-  end
-  # POST /links
-  def create
-    @link = Link.new(link_params)
-
-    if @link.save
-      redirect_to @link, notice: 'Link was successfully created.'
-    else
-      render :new, status: :unprocessable_entity
-    end
+    @link = @collection.links.build
   end
 
   # GET /links/:id/edit
   def edit
   end
 
+  # POST /collections/:collection_id/links
+  def create
+    @link = @collection.links.build(link_params)
+
+    if @link.save
+      redirect_to @collection, notice: 'Link was successfully created.'
+    else
+      render :new, status: :unprocessable_entity
+    end
+  end
 
   # PATCH/PUT /links/:id
   def update
@@ -42,7 +40,7 @@ class LinksController < ApplicationController
   # DELETE /links/:id
   def destroy
     @link.destroy
-    redirect_to links_path, status: :see_other, notice: 'Link was successfully destroyed.'
+    redirect_to collection_path(@link.collection), status: :see_other, notice: 'Link was successfully destroyed.'
   end
 
   private
@@ -52,8 +50,12 @@ class LinksController < ApplicationController
     @link = Link.find(params[:id])
   end
 
+  def set_collection
+    @collection = Collection.find(params[:collection_id])
+  end
+
   # Only allow a list of trusted parameters through.
   def link_params
-    params.require(:link).permit(:title, :url, :description)
+    params.require(:link).permit(:title, :url, :description, :collection_id)
   end
 end

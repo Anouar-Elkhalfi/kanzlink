@@ -1,0 +1,16 @@
+<h1>Collections#index</h1>
+<p>Find me in app/views/collections/index.html.erb</p>
+
+
+<h1>Collections</h1>
+<%= link_to 'New Collection', new_collection_path %>
+
+<ul>
+  <% @collections.each do |collection| %>
+    <li>
+      <%= link_to collection.name, collection %>
+      <%= link_to 'Edit', edit_collection_path(collection) %>
+      <%= link_to 'Delete', collection_path(collection), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
+    </li>
+  <% end %>
+</ul>
