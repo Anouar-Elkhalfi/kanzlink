@@ -1,1 +1,48 @@
-// Specific CSS for your home-page
+// Variables for custom styling
+$primary-color: #ff6347; // Tomato color
+$secondary-color: #ffffff; // White
+$background-color: #f0f0f0; // Light gray
+$text-color: #333333; // Dark gray
+$header-color: #2c3e50; // Dark blue
+
+body {
+  background-color: $background-color;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: $text-color;
+}
+
+.home-page {
+  margin-top: 5%;
+  background-color: $secondary-color;
+  padding: 3rem 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba($text-color, 0.1);
+  text-align: center;
+}
+
+.home-page h1 {
+  color: $header-color;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-page p {
+  color: $text-color;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.home-page .btn-primary {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+    border-color: darken($primary-color, 10%);
+  }
+}

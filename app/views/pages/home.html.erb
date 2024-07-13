@@ -1,13 +1,9 @@
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <h1>Bienvenue HOME PAGE</h1>
-        <% if user_signed_in? %>
-          <p> Bienvenue, nous sommes content de vous revoir M. <%= current_user.first_name %></p>
-        <% else %>
-          <p>you are not login </p>
-        <% end %>
-        <%= link_to "My collections", collections_path, class: "btn btn-primary" %>
-    </div>
-  </div>
+<div class="home-page">
+  <h1>Save Anything. Read Anywhere</h1>
+  <% if user_signed_in? %>
+    <p>Hi 👋 M. <%= current_user.first_name %></p>
+  <% else %>
+    <p>Log in </p>
+  <% end %>
+  <%= link_to "Mes collections", collections_path, class: "btn btn-primary" %>
 </div>
