@@ -3,7 +3,39 @@
   <% if user_signed_in? %>
     <p>Hi 👋 M. <%= current_user.first_name %></p>
   <% else %>
-    <p>Log in </p>
+    <p>Log in</p>
   <% end %>
   <%= link_to "Mes collections", collections_path, class: "btn btn-primary" %>
+
+  <div class="feature-section">
+    <div class="feature">
+      <%= image_tag 'save.JPG', alt: "Save Anything", class: "feature-image" %>
+      <h2>Save Anything</h2>
+      <p>Save all of the interesting articles, videos, cooking recipes, song lyrics, or whatever else you come across while browsing. With one click, our app lets you save, read, and manage the things you find on the Internet.</p>
+    </div>
+
+    <div class="feature">
+      <%= image_tag 'read.JPG', alt: "Read Anywhere", class: "feature-image" %>
+      <h2>Read Anywhere</h2>
+      <p>Our app syncs the articles and videos you save so that they’re waiting for you on all your devices - iPhone, iPad, Android, or Kindle. You can read anything you save, anywhere and anytime you want, even offline!</p>
+    </div>
+
+    <div class="feature">
+      <%= image_tag 'createnote.JPG', alt: "Create Notes", class: "feature-image" %>
+      <h2>Create Notes</h2>
+      <p>Find that great quote you want to remember and share? Our app makes it easy to highlight and comment on text in any article so you can easily store it, retrieve it, quote it, and share it.</p>
+    </div>
+  </div>
+
+  <div class="about-section">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>Hello! I'm Anouar, the CEO of this amazing application. I am passionate about helping people organize and manage their digital content effectively. Feel free to reach out!</p>
+      </div>
+      <div class="about-image">
+        <%= image_tag 'anouar-ceo.JPG', alt: "Anouar CEO", class: "profile-image" %>
+      </div>
+    </div>
+  </div>
 </div>
