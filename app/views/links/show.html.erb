@@ -1,15 +1,20 @@
-<div class="container">
-  <div class="row">
-    <div class="col">
+<div class="show-link-page">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6">
 
-      <h1><%= @link.title %></h1>
-      <p><%= link_to @link.url, @link.url, target: "_blank", rel: "noopener noreferrer" %></p>
-      <p><%= @link.description %></p>
+        <h1><%= @link.title %></h1>
+        <p><%= link_to @link.url, @link.url, target: "_blank", rel: "noopener noreferrer", class: "link-url" %></p>
+        <p class="link-description"><%= @link.description %></p>
 
-      <%= link_to 'Edit', edit_link_path(@link) %> |
-      <%= link_to 'Back', collection_path(@link.collection) %> |
-      <%= link_to 'Delete', link_path(@link), data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' } %>
+        <div class="action-buttons">
+          <%= link_to 'Edit', edit_link_path(@link), class: "btn btn-primary" %>
+          <%= link_to 'Back', collection_path(@link.collection), class: "btn btn-secondary" %>
+          <%= link_to 'Delete', link_path(@link), class: "btn btn-danger", data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' } %>
+        </div>
 
+      </div>
     </div>
   </div>
 </div>
+
