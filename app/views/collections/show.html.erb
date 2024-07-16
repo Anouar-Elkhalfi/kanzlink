@@ -2,19 +2,25 @@
   <div class="row">
     <div class="col">
       <h1><%= @collection.name %></h1>
-      <%= link_to 'New Link', new_collection_link_path(@collection) %>
-      <ul>
+      <%= link_to 'New Link', new_collection_link_path(@collection), class: "btn btn-success" %>
+      <ul class="list-group">
         <% @collection.links.each do |link| %>
-          <li>
-            <%= link_to link.title, link %>
-            <%= link_to 'Edit', edit_link_path(link) %>
-            <%= link_to 'Delete', link_path(link), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div class="link-item">
+              <%= link_to link.title, link, class: "link-title" %>
+            </div>
+            <div class="btn-group" role="group">
+              <%= link_to 'Edit', edit_link_path(link), class: "btn btn-outline-primary" %>
+              <%= link_to 'Delete', link_path(link), class: "btn btn-outline-danger", data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
+            </div>
           </li>
         <% end %>
       </ul>
-      <%= link_to 'Edit', edit_collection_path(@collection) %> |
-      <%= link_to 'Back', collections_path %> |
-      <%= link_to 'Delete', collection_path(@collection), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
+      <div class="mt-3">
+        <%= link_to 'Edit Collection', edit_collection_path(@collection), class: "btn btn-primary" %>
+        <%= link_to 'Back to Collections', collections_path, class: "btn btn-secondary" %>
+        <%= link_to 'Delete Collection', collection_path(@collection), class: "btn btn-danger", data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
+      </div>
     </div>
   </div>
 </div>
