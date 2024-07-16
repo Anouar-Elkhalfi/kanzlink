@@ -5,7 +5,7 @@
   <% else %>
     <p>Log in</p>
   <% end %>
-  <%= link_to "Mes collections", collections_path, class: "btn btn-primary" %>
+  <%= link_to "My collections", collections_path, class: "btn btn-primary" %>
 
   <div class="feature-section">
     <div class="feature">
@@ -22,7 +22,7 @@
 
     <div class="feature">
       <%= image_tag 'createnote.JPG', alt: "Create Notes", class: "feature-image" %>
-      <h2>Create Notes </h2>
+      <h2>Create Notes</h2>
       <p>Find that great quote you want to remember and share? Our app makes it easy to highlight and comment on text in any article so you can easily store it, retrieve it, quote it, and share it.</p>
     </div>
   </div>
@@ -31,11 +31,23 @@
     <div class="about-content">
       <div class="about-text">
         <h2>About Me</h2>
-       <p>Hello! I'm Anouar, the founder of Kanzlink, a web application that helps people organize and manage their digital content effectively. Feel free to reach out!</p>
+        <p>Hello! I'm Anouar, the founder of Kanzlink, a web application that helps people organize and manage their digital content effectively. Feel free to reach out!</p>
       </div>
       <div class="about-image">
         <%= image_tag 'anouar-ceo.JPG', alt: "Anouar CEO", class: "profile-image" %>
       </div>
     </div>
   </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; <%= Time.now.year %> Kanzlink. All rights reserved.</p>
+      <p>Contact us at <a href="mailto:support@kanzlink.com">support@kanzlink.com</a></p>
+      <div class="social-links">
+        <a href="https://twitter.com/kanzlink" target="_blank">Twitter</a> |
+        <a href="https://facebook.com/kanzlink" target="_blank">Facebook</a> |
+        <a href="https://instagram.com/kanzlink" target="_blank">Instagram</a>
+      </div>
+    </div>
+  </footer>
 </div>

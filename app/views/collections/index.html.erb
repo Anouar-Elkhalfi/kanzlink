@@ -1,18 +1,24 @@
 <div class="container">
-  <div class="row">
-    <div class="col">
-      <h1>Collections#index</h1>
-      <%= link_to 'New Collection', new_collection_path %>
-      <ul>
+  <div class="admin-header">
+    <h1>My Collection</h1>
+    <%= link_to 'New Collection', new_collection_path, class: "btn btn-success" %>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8">
+      <div class="list-group">
         <% @collections.each do |collection| %>
-          <li>
-            <%= link_to collection.name, collection %>
-            <%= link_to 'Edit', edit_collection_path(collection) %>
-            <%= link_to 'Delete', collection_path(collection), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
-          </li>
+          <div class="list-group-item d-flex justify-content-between align-items-center">
+            <div class="collection-item">
+              <%= link_to collection.name, collection, class: "collection-link" %>
+            </div>
+            <div class="btn-group" role="group">
+              <%= link_to 'Edit', edit_collection_path(collection), class: "btn btn-outline-primary" %>
+              <%= link_to 'Delete', collection_path(collection), class: "btn btn-outline-danger", data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
+            </div>
+          </div>
         <% end %>
-        <%= link_to "Home", root_path, class: "btn btn-primary" %>
-      </ul>
+      </div>
+      <%= link_to "Home", root_path, class: "btn btn-primary mt-3" %>
     </div>
   </div>
 </div>
