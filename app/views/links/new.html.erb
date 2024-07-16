@@ -1,16 +1,15 @@
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <h1>New Link</h1>
+<div class="new-link-page">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6">
+        <h1><%= action_name.capitalize %> Link</h1>
 
-      <%= render 'form', link: @link %>
+        <div class="form-container">
+          <%= render 'form', link: @link %>
+        </div>
 
-      <%= link_to 'Back', collection_path(@collection) %>
-
+        <%= link_to 'Back', collection_path(@collection), class: "btn btn-secondary mt-3" %>
+      </div>
     </div>
   </div>
 </div>
-
-
-
-

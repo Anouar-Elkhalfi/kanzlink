@@ -1,6 +1,6 @@
 <%= simple_form_for([@collection, @link]) do |f| %>
   <% if @link.errors.any? %>
-    <div id="error_explanation">
+    <div id="error_explanation" class="alert alert-danger">
       <h2><%= pluralize(@link.errors.count, "error") %> prohibited this link from being saved:</h2>
       <ul>
         <% @link.errors.full_messages.each do |message| %>
@@ -17,6 +17,6 @@
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, class: "btn btn-primary" %>
   </div>
 <% end %>

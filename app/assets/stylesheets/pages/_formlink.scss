@@ -1,0 +1,134 @@
+// Variables for custom styling
+$primary-color: #ff6347; // Tomato color
+$secondary-color: #ffffff; // White
+$background-color: #f0f0f0; // Light gray
+$text-color: #333333; // Dark gray
+$header-color: #2c3e50; // Dark blue
+$box-shadow-color: rgba(0, 0, 0, 0.15); // Box shadow color
+
+.new-link-page {
+  background-color: $background-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; // Center content vertically
+
+  .container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  h1 {
+    color: $header-color;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .form-container {
+    background-color: $secondary-color;
+    padding: 2rem 3rem;
+    border-radius: 1rem; // More rounded corners
+    box-shadow: 0 8px 16px $box-shadow-color; // More pronounced shadow
+  }
+
+  .form-inputs {
+    margin-bottom: 1.5rem;
+
+    .form-group {
+      margin-bottom: 1rem;
+
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: $header-color;
+      }
+
+      input, textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #ced4da;
+        border-radius: 0.5rem;
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-size: 1rem;
+        transition: border-color 0.3s ease;
+
+        &:focus {
+          border-color: $primary-color;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .form-actions {
+    text-align: center;
+
+    .btn-primary {
+      background-color: $primary-color;
+      border-color: $primary-color;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      text-transform: uppercase;
+      border-radius: 0.5rem;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+        border-color: darken($primary-color, 10%);
+      }
+    }
+  }
+
+  .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+
+    &:hover {
+      background-color: darken(#6c757d, 10%);
+      border-color: darken(#6c757d, 10%);
+    }
+
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .alert {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+
+    &.alert-danger {
+      background-color: #f8d7da;
+      border-color: #f5c6cb;
+      color: #721c24;
+    }
+  }
+
+  // Media queries for responsiveness
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    .form-container {
+      padding: 1.5rem 2rem;
+    }
+
+    .btn-secondary, .btn-primary {
+      font-size: 0.875rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+}
+  
