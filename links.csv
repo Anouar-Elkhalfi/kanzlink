@@ -1,0 +1,51 @@
+id,title,url,description,created_at,updated_at,collection_id,user_id
+3,facial,https://www.acaps.ma/fr/l-acaps/notre-actualite/examen-pour-lexercice-de-la-profession-dintermediaire,facial ,2024-07-20 12:34:14.78533,2024-07-20 12:34:14.78533,2,2
+4,moubawab,https://www.acaps.ma/fr/l-acaps/notre-actualite/examen-pour-lexercice-de-la-profession-dintermediaire,mobaab ,2024-07-20 12:35:29.617373,2024-07-20 12:35:29.617373,3,2
+6,Challenges,https://app.codecrafters.io/catalog,Challenges,2024-07-20 18:32:55.662427,2024-07-20 18:32:55.662427,6,3
+7,dev news,https://daily.dev/fr-fr?fbclid=PAZXh0bgNhZW0CMTEAAaZNh7KJS1zKkN5YzmlUVk4fDTb-eSIzfyuvobD1iHgE4tUdLXnL2nyKvcI_aem_LkvpNZ0JIEanhJ9oJpBxcg,dev news,2024-07-20 18:34:55.726723,2024-07-20 18:34:55.726723,4,3
+8,Business factory,https://emergingbusinessfactory.com/,marrakech incubator,2024-07-20 18:40:10.497663,2024-07-20 18:40:10.497663,7,3
+9,INDH,https://ebf-indh.ma/,M6- INDH,2024-07-20 18:41:47.095005,2024-07-20 18:41:47.095005,7,3
+10,sorcer,https://sorcer.io/,site de recrutement des profils ruby,2024-07-20 18:43:04.226481,2024-07-20 18:43:04.226481,8,3
+11,Domain,https://blog.lewagon.com/skills/buying-a-domain-on-namecheap-and-pointing-it-to-heroku/,Buy a domain on Namecheap and configure the www subdomain to point to an existing Heroku application.,2024-07-20 18:52:05.570435,2024-07-20 18:52:05.570435,9,3
+12,how to build MVP ,https://youtu.be/r-98YRAF1dY?si=6PQCYoMSeyOTWv6i,how to build MVP Harvard School ,2024-07-22 13:00:23.348813,2024-07-22 13:00:23.348813,10,3
+34,product hunt ,https://www.producthunt.com/categories?ref=header_nav,Product hunt liste of prodcuts ,2024-07-23 12:25:21.581363,2024-07-23 12:25:21.581363,67,3
+67,wagon compagnie ,https://www.wellioeducation.com/en_au/,wagon compagnie ,2024-07-23 21:39:39.013316,2024-07-23 21:39:39.013316,100,3
+100,system design ,https://www.freecodecamp.org/news/learn-system-design-principles/,Learn System Design Principles and Prepare for an Job Interview,2024-07-26 16:30:44.378755,2024-07-26 16:30:44.378755,133,3
+101,ruby academy ,https://www.rubycademy.com,ruby academy ,2024-07-27 23:30:40.17975,2024-07-27 23:30:40.17975,6,3
+133,elkhalfi.anouar@bbox.fr,https://www.bouyguestelecom.fr/mon-compte,"Identifiant : elkhalfi.anouar@bbox.fr
+mdp : un des deux",2024-07-30 09:43:26.660291,2024-07-30 09:43:26.660291,166,3
+166,wagon courses,https://learn.lewagon.com/dashboard,Wagon pré-section,2024-08-01 10:36:31.465033,2024-08-01 10:36:31.465033,199,3
+334,legal place,https://www.legalplace.fr/guides/contrat-freelance/,comment devenir freelance,2024-09-05 09:07:38.357135,2024-09-05 09:07:38.357135,365,3
+232,hello bk,hhh,"id client: 3193240806
+630124
+87127082",2024-08-02 13:43:38.721878,2024-08-02 15:11:50.575642,265,3
+265,QA Salesforce,https://www.linkedin.com/pulse/salesforce-qa-role-project-features-challenges-tools-/?trackingId=X9SrtcwlpyhtiumYig2L8Q%3D%3D,DESCRIPTION,2024-08-05 10:23:07.607771,2024-08-05 10:27:06.365011,298,3
+266,Salesforce QA Tester,https://www.linkedin.com/pulse/salesforce-qa-tester-envoy-customer-needs-innovadeltech/,Salesforce QA Tester: the Envoy of Customer Needs,2024-08-05 10:27:26.664748,2024-08-05 10:27:46.863404,298,3
+267,Marketing Cloud Consulting ,https://www.salesforceben.com/30-marketing-cloud-interview-questions-answers/,interview-questions-answers,2024-08-05 10:43:34.471443,2024-08-05 10:43:34.471443,299,3
+364,data structure ,https://www.freecodecamp.org/news/learn-data-structures-and-algorithms-2/,data structure freecodecamp,2024-09-08 13:49:04.264311,2024-09-08 13:49:04.264311,6,3
+397,thoughtbot,https://thoughtbot.com/blog/how-to-train-your-senior-developers-in-ruby-on-rails,link for learning Ruby,2024-09-14 18:37:02.565576,2024-09-14 18:37:02.565576,6,3
+398,Email for english CV ,https://inboxes.com/,Chef de projet IT en anglais ==> lolo@replyloop.com,2024-09-15 09:51:56.885656,2024-09-15 09:53:21.315967,232,3
+298,coursera,https://www.coursera.org/specializations/intro-cyber-security,cours ,2024-08-13 07:20:40.584208,2024-08-13 07:20:40.584208,331,3
+299,france travail ,jbebeb,"métier score
+emploi store
+la bonne boîte
+",2024-08-13 07:34:51.128977,2024-08-13 07:35:10.205278,332,3
+300,Créatioin d'entreprise,https://www.emploi-store.fr/portail/services/9VideosPourVotreEntreprise,Création d'entreprise ,2024-08-13 10:24:19.199571,2024-08-13 10:24:19.199571,333,3
+301,Web agency template,https://cssauthor.com/best-free-agency-website-templates/,"web agency 
+https://spydea-astro.vercel.app/
+",2024-08-13 17:28:00.132901,2024-08-13 17:53:10.095647,334,3
+303,chat gpt,https://www.freecodecamp.org/news/how-to-create-a-chatbot-with-the-chatgpt-api/,How to Create a Chatbot With the ChatGPT API,2024-08-14 17:31:42.013074,2024-08-14 17:31:42.013074,336,3
+304,DNS ,https://who.is/,Vérification des sites web ,2024-08-14 18:52:43.093563,2024-08-14 18:52:43.093563,337,3
+465,mission freelance ,https://joinwefree.com,pour trouver des mission freelance ,2024-09-25 20:51:55.695932,2024-09-25 20:51:55.695932,365,3
+331,SIRH,https://peoplespheres.com/fr/un-sirh-cest-quoi-definition-conseils-mise-en-place/,SIRH,2024-09-05 09:05:56.473526,2024-09-05 09:05:56.473526,364,3
+332,sirh 2,https://www.digitalrecruiters.com/blog/sirh-definition-quest-ce-quun-systeme-dinformation-ressources-humaines,SIRH oréparation,2024-09-05 09:06:22.047236,2024-09-05 09:06:22.047236,364,3
+333,devenir freelance,"https://www.indy.fr/guide/freelance/statut/cdi/#:~:text=Cumuler%20freelance%20et%20CDI%20c'est%20possible%20!&text=%C3%8Atre%20en%20freelance%20et%20en,Attention%20!",freelnace,2024-09-05 09:07:11.623829,2024-09-05 09:07:11.623829,365,3
+199,Fake emails ,https://inboxes.com/,"Chef de Projet IT (fr) ==>  mail: lolo@fivermail.com
+
+Chef de Projet IT (eng) ==> lolo@replyloop.com",2024-08-02 10:33:51.456501,2024-09-15 09:55:19.214211,232,3
+430,10 Websites every Web developer should at least look,https://dev.to/adarsh-gupta/10-websites-every-web-developer-should-at-least-look-5fi2?context=digest,10 Websites every Web developer should at least look,2024-09-19 16:51:59.170856,2024-09-19 16:51:59.170856,6,3
+463,SFMC,https://www.youtube.com/watch?v=I3Dk3i4GpU8&t=399s,"https://www.youtube.com/watch?v=UxiXlxSwNtA&list=PLYjAMqKETE1rJZnBFVeACjiIZvt0qLqUs
+
+
+2 :   https://www.youtube.com/watch?v=8JTkkrTj0Es&list=PL_o00w2Z5LYEez-vZu4e_G3wNwE7uQ6-h",2024-09-25 17:16:17.432214,2024-09-25 17:17:09.718851,397,3
+464,Linkedin ,https://www.linkedin.com/learning/effective-listening/getting-the-most-out-of-the-course-2?autoSkip=true&resume=false,Linkedin how to lisTEN,2024-09-25 17:18:28.203837,2024-09-25 17:18:28.203837,397,3
